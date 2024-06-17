@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="website icon" href="/pngs/favicon.png" />
+  <title>
+    CodeConnect - Aprender programação de forma divertida e interativa
+  </title>
+  <style>
+    @import url(https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap);
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "comfortaa", cursive;
+      color: #fffbff;
+      font-weight: 500;
+    }
+
+    @keyframes pulse {
+
+      0%,
+      100% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.05);
+      }
+    }
+
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 20px 10%;
+      display: flex;
+      justify-content: space-between;
+      z-index: 100;
+      background-image: transparent;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 32px;
+      text-decoration: none;
+      font-weight: 700;
+      color: #ffffff;
+      animation: pulse 5s infinite;
+    }
+
+    .navbar,
+    a {
+      font-weight: 500;
+      font-size: 18px;
+      text-decoration: none;
+      color: #fffbff;
+      margin-left: 35px;
+      transition: 0.3s;
+    }
+
+    .navbar a:hover {
+      color: #fffbff;
+    }
+
+    .a-nav {
+      border-radius: 80px;
+      margin: 10px;
+      padding: 5px;
+      background-color: #474f7a;
+      width: 150px;
+      height: 40px;
+      cursor: pointer;
+      align-content: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      vertical-align: middle;
+      border: 2px solid black;
+    }
+
+    @keyframes rgb-nav {
+      0% {
+        border-color: rgb(255, 0, 136);
+      }
+
+      50% {
+        border-color: rgb(0, 140, 255);
+      }
+
+      100% {
+        border-color: rgb(255, 0, 136);
+      }
+    }
+
+    .a-nav:hover,
+    .a-nav.active {
+      background-color: color-mix(in srgb, blue 15%, red 58%);
+      transform: translateY(-25%);
+      color: aliceblue;
+      border: 2px solid red;
+      animation: rgb-nav 2s infinite;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .a-nav:hover {
+      color: aliceblue;
+    }
+
+    body,
+    html {
+      background-color: #1f0322;
+      height: 100%;
+      margin: 0;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .content {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .all-content {
+      align-items: start;
+    }
+
+    address {
+      padding: 50px;
+    }
+
+    h3,
+    h4,
+    h5,
+    p {
+      font-size: 25px;
+    }
+
+    h3 {
+      padding: 20px;
+    }
+
+    h4 {
+      padding: 0 0 20px;
+    }
+
+    h5 {
+      padding: 0 0 20px;
+      text-align: center;
+    }
+
+    h6 {
+      font-size: 25px;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo logo-border">CodeConnect</div>
+    <nav class="nav-bar">
+      <a class="a-nav" href="codeconnect.html">Home</a>
+
+      <a class="a-nav" href="about-us.html">Sobre Nós</a>
+
+      <a class="a-nav" href="/back-end/public/index.html">Forúm</a>
+
+      <a class="a-nav active" href="contact.html">Contato</a>
+    </nav>
+  </header>
+
+  <div class="all-content">
+    <div class="content">
+      <h3>
+        Queremos ouvir sua opinião e estamos ansiosos para receber seu
+        feedback!
+      </h3>
+      <h4>
+        Entre em contato conosco por e-mail para compartilhar suas ideias,
+        sugestões ou comentários.
+      </h4>
+
+      <h5>
+        Se você está interessado em se juntar à nossa equipe dinâmica e
+        colaborativa, fique à vontade para nos ligar. Estamos sempre em busca
+        de pessoas talentosas e apaixonadas para se unirem a nós.
+      </h5>
+
+      <p>Aqui estão nossos detalhes de contato:</p>
+    </div>
+
+    <address>
+      <h6>Email:</h6>
+      <h6>Telefone:</h6>
+      <h6>Endereço:</h6>
+      <h6>Redes:</h6>
+    </address>
+  </div>
+</body>
+
+</html>

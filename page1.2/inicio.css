@@ -1,0 +1,407 @@
+@import url(https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "comfortaa", cursive;
+  color: #fffbff;
+  font-weight: 500;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 100;
+  background-color: transparent;
+  align-items: center;
+}
+
+.logo {
+  font-size: 32px;
+  text-decoration: none;
+  font-weight: 700;
+  color: #ffffff;
+  animation: pulse 5s infinite;
+}
+
+.navbar,
+a {
+  font-weight: 500;
+  font-size: 18px;
+  text-decoration: none;
+  color: #ffffff;
+  margin-left: 35px;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: white;
+}
+
+.a-nav {
+  border-radius: 80px;
+  margin: 10px;
+  padding: 5px;
+  background-color: transparent;
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  align-content: center;
+  vertical-align: middle;
+}
+
+.a-nav:hover,
+.a-nav.active {
+  background-color: color-mix(in srgb, blue 15%, red 58%);
+  transform: translateY(-25%);
+  color: aliceblue;
+  border: 2px solid red;
+  animation: rgb-nav 2s infinite;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.a-nav:hover {
+  color: aliceblue;
+}
+
+@keyframes rgb-nav {
+  0% {
+    border-color: rgb(255, 0, 136);
+  }
+
+  50% {
+    border-color: rgb(0, 140, 255);
+  }
+
+  100% {
+    border-color: rgb(255, 0, 136);
+  }
+}
+
+body,
+html {
+  height: 100%;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #1f0322;
+}
+
+.btn {
+  justify-content: center;
+  display: inline-block;
+  border-radius: 10px;
+  flex-direction: column;
+  margin: 5px;
+  padding: 10px 10px;
+  width: 140px;
+  height: 100px;
+  cursor: pointer;
+  vertical-align: middle;
+  color: #fffbff;
+  border: 1px solid black;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  color: white;
+  transform: translateY(12.5%);
+}
+
+.frontend {
+  font-size: large;
+}
+
+.rainbow-link {
+  animation: rainbow 10s linear infinite;
+}
+
+@keyframes rainbow {
+  0% {
+    background-color: #add8e6;
+  }
+
+  /* Azul claro */
+  20% {
+    background-color: #87ceeb;
+  }
+
+  /* Azul médio */
+  40% {
+    background-color: #6495ed;
+  }
+
+  /* Azul */
+  60% {
+    background-color: #4169e1;
+  }
+
+  /* Azul escuro */
+  80% {
+    background-color: #0000ff;
+  }
+
+  /* Azul mais escuro */
+  100% {
+    background-color: #add8e6;
+  }
+
+  /* Voltando ao azul claro */
+}
+
+.rainbow-pink {
+  animation: rainbow-pink 10s linear infinite;
+}
+
+@keyframes rainbow-pink {
+  0% {
+    background-color: #ffb6c1;
+  }
+
+  /* Rosa claro */
+  20% {
+    background-color: #ff69b4;
+  }
+
+  /* Rosa médio */
+  40% {
+    background-color: #ff1493;
+  }
+
+  /* Rosa */
+  60% {
+    background-color: #c71585;
+  }
+
+  /* Rosa escuro */
+  80% {
+    background-color: #db7093;
+  }
+
+  /* Rosa mais escuro */
+  100% {
+    background-color: #ffb6c1;
+  }
+
+  /* Voltando ao rosa claro */
+}
+
+.rainbow-orange {
+  animation: rainbow-orange 10s linear infinite;
+}
+
+@keyframes rainbow-orange {
+  0% {
+    background-color: #ffa500;
+  }
+
+  /* Laranja */
+  20% {
+    background-color: #ff8c00;
+  }
+
+  /* Laranja médio */
+  40% {
+    background-color: #ff7f50;
+  }
+
+  /* Coral */
+  60% {
+    background-color: #ff6347;
+  }
+
+  /* Tomate */
+  80% {
+    background-color: #ff4500;
+  }
+
+  /* Vermelho laranja */
+  100% {
+    background-color: #ffa500;
+  }
+
+  /* Voltando ao laranja */
+}
+
+.rainbow-red {
+  animation: rainbow-red 10s linear infinite;
+}
+
+@keyframes rainbow-red {
+  0% {
+    background-color: #ffcccc;
+  }
+
+  /* Vermelho claro */
+  20% {
+    background-color: #ff9999;
+  }
+
+  /* Vermelho médio claro */
+  40% {
+    background-color: #ff6666;
+  }
+
+  /* Vermelho */
+  60% {
+    background-color: #ff3333;
+  }
+
+  /* Vermelho escuro */
+  80% {
+    background-color: #ff0000;
+  }
+
+  /* Vermelho mais escuro */
+  100% {
+    background-color: #ffcccc;
+  }
+
+  /* Voltando ao vermelho claro */
+}
+
+.rainbow-java {
+  animation: rainbow-red 10s linear infinite;
+}
+
+@keyframes rainbow-java {
+  0% {
+    background-color: #faf5f5;
+  }
+
+  /* Vermelho claro */
+  20% {
+    background-color: #ff9999;
+  }
+
+  /* Vermelho médio claro */
+  40% {
+    background-color: #ff6666;
+  }
+
+  /* Vermelho */
+  60% {
+    background-color: #ff3333;
+  }
+
+  /* Vermelho escuro */
+  80% {
+    background-color: #ff0000;
+  }
+
+  /* Vermelho mais escuro */
+  100% {
+    background-color: #ffcccc;
+  }
+
+  /* Voltando ao vermelho claro */
+}
+
+.rainbow-python {
+  animation: rainbow-python 20s linear infinite;
+}
+
+@keyframes rainbow-python {
+  0% {
+    background-color: #030366;
+    /* Azul */
+  }
+
+  10% {
+    background-color: #7684bc;
+    /* Azul Claro */
+  }
+
+  20% {
+    background-color: #87cbeb;
+    /* Azul Claro */
+  }
+
+  30% {
+    background-color: #64eddf;
+    /* Azul Médio */
+  }
+
+  40% {
+    background-color: #41e19e;
+    /* Azul */
+  }
+
+  50% {
+    background-color: #00ff66;
+    /* Azul */
+  }
+
+  60% {
+    background-color: #ffff00;
+    /* Amarelo */
+  }
+
+  70% {
+    background-color: #ffcc00;
+    /* Amarelo */
+  }
+
+  80% {
+    background-color: #a89203;
+    /* Amarelo */
+  }
+
+  90% {
+    background-color: #a28b04;
+    /* Amarelo */
+  }
+
+  100% {
+    background-color: #000000;
+    /* Preto */
+  }
+}
+
+
+a {
+  text-decoration: none;
+}
+
+.btn img {
+  display: block;
+  margin: auto;
+}
+
+.btn p {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.btn {
+  transition: filter 0.25 ease;
+}
+
+.choose-btn:has(.btn:hover) .btn:not(:hover) {
+  filter: grayscale(100%);
+}
+
+.btn1:hover {
+  box-shadow: 0 0 30px rgba(0, 123, 255, 0.7);
+}
+
+.btn2:hover {
+  box-shadow: 0 0 30px #c71585;
+}
+
+.btn3:hover {
+  box-shadow: 0 0 30px #ff6347;
+}
+
+h2 {
+  font-size: 20px;
+  padding: 20px 0px 0px 0px;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fórum</title>
+    <link rel="icon" href="/pngs/favicon.png" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo logo-border">CodeConnect</div>
+        <nav class="nav-bar">
+            <a class="a-nav active" href="/codeconnect.html">Home</a>
+            <a class="a-nav" href="/about-us.html">Sobre Nós</a>
+            <a class="a-nav" href="/contact.html">Contato</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="search-post">
+            <form id="searchForm" class="search-form">
+                <input type="text" id="search" class="search" placeholder="Pesquisar...">
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+
+        <div class="forum-section">
+            <h1>Fórum</h1>
+            <div id="post" class="posts"></div>
+            <form id="postForm" class="post-form">
+                <input type="text" id="title" class="title" placeholder="Qual sua duvida?" required>
+                <textarea id="content" class="content" placeholder="Explique sobre ela aqui" required></textarea>
+                <button type="submit">Postar</button>
+            </form>
+        </div>
+        <aside class="sidebar">
+            <h2>Postagens Recentes</h2>
+            <div class="recent-posts"></div>
+            <h2>Mais Votados</h2>
+            <div class="top-posts"></div>
+            <h2>Mais Procurados</h2>
+            <div class="searched-posts"></div>
+        </aside>
+    </div>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>

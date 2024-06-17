@@ -1,0 +1,160 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo do corpo */
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Header e navegação */
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    font-size: 32px;
+    text-decoration: none;
+    font-weight: 700;
+    color: #007BFF;
+
+}
+
+.search {
+    border-radius: 20px;
+    padding: 0 0 0 5px;
+}
+
+button {
+    border-radius: 20px;
+    color: #007BFF;
+    font: bold;
+    padding: 1px 5px 1px 5px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.12s ease;
+}
+
+button:hover {
+    transform: translateY(2px);
+}
+
+.a-nav {
+    justify-content: space-between;
+    padding: 20px 20px 20px 20px;
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Seção do fórum */
+.forum-section {
+    background: #fff;
+    padding: 20px 20px 20px 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 65%;
+    margin-right: 20px;
+}
+
+/* Seção do título principal */
+.forum-section h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #007BFF;
+}
+
+/* Estilo dos posts */
+.posts {
+    margin-bottom: 20px;
+}
+
+/* Estilo do formulário */
+.post-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo do campo de título */
+.post-form input[type="text"],
+.post-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Estilo do botão de submit */
+.post-form button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.post-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 35%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+    font-size: 1.5em;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+/* Estilos para os blocos de postagens na sidebar */
+.recent-posts,
+.top-posts,
+.searched-posts {
+    margin-bottom: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .forum-section,
+    .sidebar {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
